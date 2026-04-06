@@ -1,0 +1,11 @@
+const nombre = "Valentina";
+const fecha = new Date("07/11/2026 21:30");
+const cumple = new Date("07/11/2026");
+const horaEvento = "21:30Hs";
+const alias = "ALIAS";
+const ttCuenta = "Titular";
+const cvu = "cvu";
+const direccionLink = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.0725531369826!2d-64.12713858970383!3d-31.301739774207707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329111dcff49eb%3A0x9873c95e2e7e1de8!2sLa%20Catal%C3%A1!5e0!3m2!1ses-419!2sar!4v1775311139744!5m2!1ses-419!2sar";
+const coordenadas = "La Catalá";
+const formCanciones = "https://forms.gle/r8HKYEzRpzbinRk88";
+const fechaGoogle = "https://calendar.app.google/iJuSvoi9M3pCmRTw9";
