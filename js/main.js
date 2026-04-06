@@ -12,6 +12,9 @@ const grupoDias = document.querySelector("#grupoDias");
 const grupoHoras = document.querySelector("#grupoHoras");
 const grupoMinutos = document.querySelector("#grupoMinutos");
 const dressCode = document.getElementById('dressCode');
+const asistenciaHasta = document.getElementById('asistenciaHasta');
+
+const valorTarjeta = document.getElementById('valorTarjeta');
 
 const spanCumple = document.querySelector("#cumple");
 

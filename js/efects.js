@@ -101,17 +101,21 @@ document.addEventListener("DOMContentLoaded", () => {
             abrirEvento();
         }, 800); // podés ajustar el tiempo
         });
+
     crearBoton("verDatos", "Ver Datos", () => {
         setTimeout(() => {
             mostrarDatos()
         }, 700);
     });
+
     crearBoton("aliasTxt", alias);
+    
     crearBoton("btnMapa", "Ver en Google Maps", () =>{
         setTimeout(() => {
             abrirMapa();
         }, 800); // podés ajustar el tiempo
         });
+
     crearBoton("confirmarAsistencia", "Confirmar asistencia", () => {
         const link = document.createElement("a");
         link.href = formAsistencia;
@@ -135,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (esMovil) {
             crearBoton("calendario", "Agendar!", () => {
-                window.open("URL_GOOGLE_CALENDAR", "_blank");
+                window.open("https://calendar.google.com/calendar/render?action=TEMPLATE&text=Fiesta%20de%2015%20A%C3%B1os&dates=20261108T003000Z20261108T080000Z&details=%C2%A1Te%20esperams%20en%20la%20fiesta%20de%2015%20a%C3%B1os%20%F0%9F%8E%89%0ADress%20code%20Formal%20elegante%0ASe%20recomienda%20vestimenta%20oscura.&location=Sal%C3%B3n%20de%20Eventos%20La%20Catal%C3%A1&ctz=America/Argentina/Cordoba", "_blank");
             });
             } else {
             crearBoton("calendario", "Agendar!", () => {
