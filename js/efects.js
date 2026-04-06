@@ -136,17 +136,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 800); // podés ajustar el tiempo
         });
 
+    crearBoton("calendario", "Agendar!", () => {
+        const a = document.createElement("a");
+        a.href = "../calendar/evento-15años.ics";
+        a.download = "Fiesta15Años.ics";
+        a.click();
+        });
 
-        if (esMovil) {
-            crearBoton("calendario", "Agendar!", () => {
-                window.open("https://calendar.google.com/calendar/render?action=TEMPLATE&text=Fiesta%20de%2015%20A%C3%B1os&dates=20261108T003000Z20261108T080000Z&details=%C2%A1Te%20esperams%20en%20la%20fiesta%20de%2015%20a%C3%B1os%20%F0%9F%8E%89%0ADress%20code%20Formal%20elegante%0ASe%20recomienda%20vestimenta%20oscura.&location=Sal%C3%B3n%20de%20Eventos%20La%20Catal%C3%A1&ctz=America/Argentina/Cordoba", "_blank");
-            });
-            } else {
-            crearBoton("calendario", "Agendar!", () => {
-                const a = document.createElement("a");
-                a.href = "../calendar/evento-15años.ics";
-                a.download = "Fiesta15Años.ics";
-                a.click();
-            });
-            }
             });
