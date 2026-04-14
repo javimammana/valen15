@@ -83,6 +83,35 @@ body {
     transition: all 0.8s ease;
 }
 
+/*DressCode*/
+
+.colorDressCode {
+    border-radius: 100%;
+    border: 2px solid var(--colorPrimario);
+    width: 50px;
+    height: 50px;
+}
+
+.dsc01 {
+    background-image: url("../img/DSColor01.jpg");
+    background-size: contain;
+}
+
+.dsc02 {
+    background-image: url("../img/DSColor02.jpg");
+    background-size: contain;
+}
+
+.dsc03 {
+    background-image: url("../img/DSColor03.jpg");
+    background-size: contain;
+}
+
+.dsc04 {
+    background-image: url("../img/DSColor04.jpg");
+    background-size: contain;
+}
+
 /*TEXTOS*/
 
 .txtPrincipal {

@@ -4,8 +4,8 @@ const formAsistencia = "https://forms.gle/XfVKqUnnrnDDh11M8";
 
 const asistenciaFecha = "01/09/2026";
 
-asistenciaHasta.innerHTML = `Confirmar asistencia hasta ${asistenciaHasta}`;
+asistenciaHasta.innerHTML = `Confirmar asistencia hasta ${asistenciaFecha}`;
 
-const costo = 140000;
+const costo = 120000;
 
-valorTarjeta.innerHTML = `Valor de Tarjeta $${costo}.-`;
+valorTarjeta.innerHTML = `Valor de Tarjeta $${costo} hasta el 30/04/2026.-`;

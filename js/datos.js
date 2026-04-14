@@ -1,7 +1,7 @@
 const nombre = "Valentina";
-const fecha = new Date("07/11/2026 21:30");
+const fecha = new Date("11/07/2026 21:30");
 const cumple = new Date("07/11/2026");
-const horaEvento = "21:30Hs";
+const horaEvento = "21:00Hs";
 const alias = "ALIAS";
 const ttCuenta = "Titular";
 const cvu = "cvu";
