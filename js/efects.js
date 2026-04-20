@@ -109,6 +109,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     crearBoton("aliasTxt", alias);
+
+    crearBoton("aliasTxtT", aliasTarjetasCvu);
     
     crearBoton("btnMapa", "Ver en Google Maps", () =>{
         setTimeout(() => {
@@ -124,6 +126,13 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
             link.click();
         }, 800); // podés ajustar el tiempo
+        });
+
+    crearBoton("aliasTarjeta", "CBU Tarjeta", () => {
+
+        setTimeout(() => {
+            mostrarDatosTarjeta();
+        }, 700); // podés ajustar el tiempo
         });
 
     crearBoton("recomendarCancion", "Recomendar canción", () => {

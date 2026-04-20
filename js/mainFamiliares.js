@@ -9,3 +9,4 @@ asistenciaHasta.innerHTML = `Confirmar asistencia hasta ${asistenciaFecha}`;
 const costo = 120000;
 
 valorTarjeta.innerHTML = `Valor de Tarjeta $${costo} hasta el 30/04/2026.-`;
+

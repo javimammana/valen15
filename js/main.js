@@ -14,6 +14,8 @@ const grupoMinutos = document.querySelector("#grupoMinutos");
 const dressCode = document.getElementById('dressCode');
 const asistenciaHasta = document.getElementById('asistenciaHasta');
 
+
+
 const valorTarjeta = document.getElementById('valorTarjeta');
 
 const spanCumple = document.querySelector("#cumple");
@@ -79,7 +81,7 @@ function mostrarDatos() {
 }
 
 document.getElementById('copyBtn').addEventListener('click', function() {
-    const aliasTxtCopy = aliasTxt.textContent;
+    const aliasTxtCopy = alias;
     navigator.clipboard.writeText(aliasTxtCopy)
     .then(() => {
         Swal.fire({
@@ -95,3 +97,31 @@ document.getElementById('copyBtn').addEventListener('click', function() {
         console.log("Error al copiar Alias:", err);
     });
 });
+
+document.getElementById('copyBtnT').addEventListener('click', function() {
+    const aliasTxtCopy = aliasTarjetasCvu;
+    navigator.clipboard.writeText(aliasTxtCopy)
+    .then(() => {
+        Swal.fire({
+        position: "top",
+        title: "Alias Copiado!",
+        color: "#023859",
+        showConfirmButton: false,
+        timer: 1500,
+        timerProgressBar: true,
+        });
+    })
+    .catch(err => {
+        console.log("Error al copiar Alias:", err);
+    });
+});
+
+function mostrarDatosTarjeta() {
+    const datoTarj = document.getElementById('datosTarjeta');
+    const btnT = document.getElementById('datosTarjeta');
+
+    btnT.classList.add('d-none');
+    datoTarj.classList.remove('d-none');
+    datoTarj.classList.add('d-flex');
+
+}
