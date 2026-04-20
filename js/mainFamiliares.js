@@ -10,3 +10,21 @@ const costo = 120000;
 
 valorTarjeta.innerHTML = `Valor de Tarjeta $${costo} hasta el 30/04/2026.-`;
 
+document.getElementById('copyBtnT').addEventListener('click', function() {
+    const aliasTxtCopy = aliasTarjetasCvu;
+    navigator.clipboard.writeText(aliasTxtCopy)
+    .then(() => {
+        Swal.fire({
+        position: "top",
+        title: "Alias Copiado!",
+        color: "#023859",
+        showConfirmButton: false,
+        timer: 1500,
+        timerProgressBar: true,
+        });
+    })
+    .catch(err => {
+        console.log("Error al copiar Alias:", err);
+    });
+});
+

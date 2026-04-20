@@ -98,24 +98,6 @@ document.getElementById('copyBtn').addEventListener('click', function() {
     });
 });
 
-document.getElementById('copyBtnT').addEventListener('click', function() {
-    const aliasTxtCopy = aliasTarjetasCvu;
-    navigator.clipboard.writeText(aliasTxtCopy)
-    .then(() => {
-        Swal.fire({
-        position: "top",
-        title: "Alias Copiado!",
-        color: "#023859",
-        showConfirmButton: false,
-        timer: 1500,
-        timerProgressBar: true,
-        });
-    })
-    .catch(err => {
-        console.log("Error al copiar Alias:", err);
-    });
-});
-
 function mostrarDatosTarjeta() {
     const datoTarj = document.getElementById('datosTarjeta');
     const btnT = document.getElementById('datosTarjeta');

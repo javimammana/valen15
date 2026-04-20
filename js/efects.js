@@ -110,7 +110,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     crearBoton("aliasTxt", alias);
 
-    crearBoton("aliasTxtT", aliasTarjetasCvu);
+            crearBoton("aliasTxtT", aliasTarjetasCvu);
+    
+
+
     
     crearBoton("btnMapa", "Ver en Google Maps", () =>{
         setTimeout(() => {
