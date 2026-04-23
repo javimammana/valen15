@@ -96,7 +96,7 @@ function abrirMapa() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    crearBoton("btnWelcome", "Mis 15 años", () =>{
+    crearBoton("btnWelcome", "Ver Mis 15 años", () =>{
         setTimeout(() => {
             abrirEvento();
         }, 800); // podés ajustar el tiempo
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 800); // podés ajustar el tiempo
         });
 
-    crearBoton("aliasTarjeta", "CBU Tarjeta", () => {
+    crearBoton("aliasTarjeta", "Datos de Pago", () => {
 
         setTimeout(() => {
             mostrarDatosTarjeta();
