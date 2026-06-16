@@ -6,9 +6,9 @@ const asistenciaFecha = "01/09/2026";
 
 asistenciaHasta.innerHTML = `Confirmar asistencia hasta ${asistenciaFecha}`;
 
-const costo = 136500;
+const costo = 143325;
 
-valorTarjeta.innerHTML = `Valor de Tarjeta $${costo} hasta el 15/05/2026 (Estimado un incremento de 5% mensual).-`;
+valorTarjeta.innerHTML = `Valor de Tarjeta $${costo} hasta el 15/07/2026 (Estimado un incremento de 5% mensual).-`;
 
 document.getElementById('copyBtnT').addEventListener('click', function() {
     const aliasTxtCopy = aliasTarjetasCvu;
